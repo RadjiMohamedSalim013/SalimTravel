@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgba(179, 118, 6, 0.253);
+}
+
+/* header*/
+
+header{
+    background-color: rgb(5, 100, 48);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  
+}
+
+a h1{
+    color: orange;
+}
+
+h1{
+    color: green;
+    font-weight: bold;
+    
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: orange;
+}
+
+.navbar-toggler {
+    background-color: orange;  
+}
+nav{
+    font-size: 18px;
+}
+
+hr{
+    color: orange;
+}
+
+
+/* section héros*/
+
+.héros_background{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: changeBackground  120s infinite;
+    
+}
+
+@keyframes changeBackground {
+    0%{
+        background-image: url('./images/banner-01.jpg');
+    }
+    25%{
+        background-image: url('./images/banner-02.jpg');
+    }
+    50%{
+        background-image: url('./images/banner-03.jpeg');
+    }
+    75%{
+        background-image: url('./images/banner-04.jpg');
+    }
+    100%{
+        background-image: url('./images/banner-01.jpg');
+    }
+
+ 
+}
+
+
+/* Section héros*/
+
+.detail{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(61, 139, 9, 0.733);
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.detail a{
+    display: inline-block; 
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: orange;
+    border-radius: 15px;
+}
+
+.btn-primary{
+    background-color: rgba(0, 128, 0, 0.726);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-primary:hover{
+    background-color: green;
+}
+
+.card-text{
+    min-height: 180px;
+}
+
+/* section Contact*/
+
+
+@media screen and (max-width: 768px){
+    .héros_background{
+        height: 80vh;
+    }
+   
+    .detail a {
+        font-size: 16px; 
+    }
+    
+}
+
+
