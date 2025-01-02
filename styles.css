@@ -125,6 +125,12 @@ hr{
     min-height: 180px;
 }
 
+/* section Destination*/
+
+.destination{
+    overflow: hidden;
+}
+
 /* section Contact*/
 
 
@@ -140,3 +146,17 @@ hr{
 }
 
 
+/* footer */
+
+footer{
+    background-color: rgb(5, 100, 48);
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+footer p{
+    font-weight: bold;
+}
