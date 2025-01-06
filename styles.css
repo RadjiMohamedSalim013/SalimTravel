@@ -55,7 +55,7 @@ hr{
     height: 100vh;
     background-size: cover;
     background-position: center;
-    animation: changeBackground  120s infinite;
+    animation: changeBackground  60s infinite;
     
 }
 
